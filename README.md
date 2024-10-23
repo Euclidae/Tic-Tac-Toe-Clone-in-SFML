@@ -6,9 +6,7 @@ This project implements a classic Tic Tac Toe game using the SFML (Simple and Fa
 
 ### Files
 
-* **Board.hpp/cpp:** Represents the game board, handles game logic, and determines the winner.
 * **Game.hpp/cpp:** Maintains the game state, handles player turns, and updates the game board.
-* **Graphics.hpp/cpp:** Handles all graphical aspects of the game, including drawing the board, pieces, and messages.
 * **InputManager.hpp/cpp:** Manages input from the player (mouse clicks).
 * **main.cpp:** The entry point of the application.
 * **SFML headers:** Required SFML headers for graphics, window, and system.
@@ -20,7 +18,7 @@ This project implements a classic Tic Tac Toe game using the SFML (Simple and Fa
 3. **Compile:** Open a terminal or command prompt in the project directory and compile the code using the following command:
 
    ```bash
-   g++ main.cpp Board.cpp Game.cpp Graphics.cpp InputManager.cpp -o tictactoe -lsfml-graphics -lsfml-window -lsfml-system
+   g++ *.cpp -o tictactoe -lsfml-graphics -lsfml-window -lsfml-system
    ```
 
 ### Running
@@ -38,8 +36,7 @@ This project implements a classic Tic Tac Toe game using the SFML (Simple and Fa
 
 ### Customization
 
-* **Graphics:** Customize the appearance of the board, pieces, and fonts in the `Graphics` class.
-* **Game Logic:** Modify the game rules or add features in the `Board` and `Game` classes.
+* **Game Logic:** Modify the game rules or add features in the `Game` class.
 * **Input:** Adjust the input handling in the `InputManager` class.
 
 **Note:** This is a basic implementation of Tic Tac Toe. You can extend it with features like AI opponents, different game modes, or multiplayer functionality.
