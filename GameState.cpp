@@ -25,8 +25,6 @@ namespace Deus {
 		_background.setTexture(this->_data->assets.GetTexture("Background"));
 		_gridSprite.setTexture(this->_data->assets.GetTexture("Grid Sprite"));
 		_pauseButton.setTexture(this->_data->assets.GetTexture("Pause Button"));
-
-
 		_pauseButton.setPosition(this->_data->window.getSize().x - _pauseButton.getLocalBounds().width, _pauseButton.getPosition().y);
 		_gridSprite.setPosition((SCREEN_WIDTH/2)-(_gridSprite.getGlobalBounds().width/2),
 			(SCREEN_HEIGHT / 2) - (_gridSprite.getGlobalBounds().height / 2));
